@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Locker</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Locker status</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Object: bag</h6>
+          <h6 class="card-subtitle mb-2 text-muted">UV Lamp : on</h6>
+          <h6 class="card-subtitle mb-2 text-muted">PIN : 2467</h6>
+          <a href="#" class="card-link">Back</a>
+        </div>
+      </div>
+      <script>
+        var $_GET = {};
+        if(document.location.toString().indexOf('?') !== -1) {
+            var query = document.location
+                        .toString()
+                        // get the query string
+                        .replace(/^.*?\?/, '')
+                        // and remove any existing hash string (thanks, @vrijdenker)
+                        .replace(/#.*$/, '')
+                        .split('&');
+
+            for(var i=0, l=query.length; i<l; i++) {
+            var aux = decodeURIComponent(query[i]).split('=');
+            $_GET[aux[0]] = aux[1];
+            }
+        }
+
+        document.getElementById('PIN').innerHTML = $_GET['index'];
+      </script>
+</body>
+</html>

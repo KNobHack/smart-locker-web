@@ -19,7 +19,7 @@
         <div class="card-body">
           <h5 class="card-title">Locker status</h5>
           <h6 class="card-subtitle mb-2 text-muted">Object: Box</h6>
-          <h6 class="card-subtitle mb-2 text-muted">UV Lamp : on</h6>
+          <h6 class="card-subtitle mb-2 text-muted">UV Lamp : <span id="uv">on</span></h6>
           <h6 class="card-subtitle mb-2 text-muted">PIN : 2467</h6>
           <a href="locker.html" class="card-link">Back</a>
         </div>
@@ -42,7 +42,7 @@
             }
         }
 
-        document.getElementById('PIN').innerHTML = $_GET['index'];
+        // document.getElementById('uv').innerHTML = $_GET['index'];
       </script>
 </body>
 </html>

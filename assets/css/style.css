@@ -19660,7 +19660,7 @@ select.form-control[data-multiselectsplitter-firstselect-selector], select.form-
     overflow: hidden;
     min-width: 100%;
     min-height: 100vh;
-    background: #7267EF;
+    background: #D4A429;
 }
 
 @media (min-width: 1200px) {

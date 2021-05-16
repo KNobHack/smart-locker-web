@@ -16,13 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Dadakanz">
 
-    <style>
-    .pc-sidebar .pc-link:active, .pc-sidebar .pc-link:focus, .pc-sidebar .pc-link:hover {
-        text-decoration: none;
-        color: #fff;
-    }
-    </style>
-
+    
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
@@ -66,8 +60,8 @@
     <!-- [ Mobile header ] End -->
 
     <!-- [ navigation menu ] start -->
-    <nav class="pc-sidebar " style="background: #ffffff;">
-        <div class="navbar-wrapper" style="color: #fafafa81;">
+    <nav class="pc-sidebar ">
+        <div class="navbar-wrapper">
             <div class="m-header">
                 <a href="private.html" class="b-brand">
                     <!-- ========   change your logo hear   ============ -->
@@ -80,7 +74,7 @@
                     <li class="pc-item pc-caption">
                         <label>Navigation</label>
                     </li>
-                    <li class="pc-item" style="color: #fafafa81">
+                    <li class="pc-item">
                         <a href="private.html" class="pc-link ">
                             <span class="pc-micon">
                                 <span class="material-icons-two-tone">
@@ -115,14 +109,16 @@
                             role="button" aria-haspopup="false" aria-expanded="false">
                             <img src="assets/images/user/default-user.jpg" alt="user-image" class="user-avtar">
                             <span>
-                                <span class="user-name">Joseph William</span>
+                                <span class="user-name">William Vengeance</span>
                                 <!-- <span class="user-desc">Administrator</span> -->
                             </span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right pc-h-dropdown">
 
                             <a href="login.html" class="dropdown-item">
-                                <i class="material-icons-two-tone">chrome_reader_mode</i>
+                                <span class="material-icons-two-tone">
+                                    sensor_door
+                                </span>
                                 <span>Logout</span>
                             </a>
                         </div>
@@ -151,7 +147,9 @@
                                         <thead>
                                             <tr>
                                                 <th>Locker ID</th>
-                                                <th>Status</th>
+                                                <th>Locker's Status</th>
+                                                <th>Stuff(s) Weight</th>
+                                                <th>Lock Status</th>
                                                 <th>Detail</th>
                                             </tr>
                                         </thead>
@@ -159,15 +157,34 @@
                                             <tr>
                                                 <td>F529CB</td>
                                                 <td>
-                                                    <div><label class="badge bg-light-success">Empty</label></div>
+                                                    <div><label class="badge bg-light-danger">Empty</label></div>
+                                                </td>
+                                                <td>0 g</td>
+                                                <td><span class="material-icons-two-tone">
+                                                    toggle_off</span>
+                                                    <span class="material-icons-two-tone">
+                                                    lock</span>
                                                 </td>
                                                 <td>
-                                                    <a href="#!">
-                                                        <i class="icon feather icon-info f-16 text-primary"></i>
-                                                    </a>
+                                                    No activity
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td>F530CB</td>
+                                                <td>
+                                                    <div><label class="badge bg-light-success">Filled</label></div>
+                                                </td>
+                                                <td>500 g</td>
+                                                <td><span class="material-icons-two-tone">
+                                                    toggle_on</span>
+                                                    <span class="material-icons-two-tone">
+                                                    lock_open</span>
+                                                </td>
+                                                <td>
+                                                    Sterilizing...
+                                                </td>
+                                            </tr>
+                                            <!-- <tr>
                                                 <td>Iphone 6</td>
                                                 <td>
                                                     <div><label class="badge bg-light-danger">Occupied</label></div>
@@ -176,7 +193,7 @@
                                                         <i class="icon feather icon-info f-16 text-primary"></i>
                                                     </a>
                                                 </td>
-                                            </tr>
+                                            </tr> -->
                                         </tbody>
                                     </table>
                                 </div>

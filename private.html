@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>DashboardKit Bootstrap 5 Admin Template</title>
+    <title>Smizer Lock</title>
     <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 11]>
@@ -155,11 +155,11 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>F529CB</td>
+                                                <td>FA5299CB</td>
                                                 <td>
                                                     <div><label class="badge bg-light-danger">Empty</label></div>
                                                 </td>
-                                                <td>0 g</td>
+                                                <td><label class="badge bg-light-success">0 g</label></td>
                                                 <td>
                                                     <span class="material-icons-two-tone">
                                                         lock
@@ -172,18 +172,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>F530CB</td>
+                                                <td>FA5300CB</td>
                                                 <td>
                                                     <div><label class="badge bg-light-success">Filled</label></div>
                                                 </td>
-                                                <td>500 g</td>
+                                                <td><label class="badge bg-light-success">500 g</label></td>
                                                 <td>
                                                     <span class="material-icons-two-tone">
                                                         lock_open
                                                     </span>
                                                 </td>
                                                 <td>
-                                                    <a href="#!" data-toggle="modal" data-target="#LockerModal">
+                                                    <a href="#!" data-toggle="modal" data-target="#LockerModal2">
                                                         <i class="icon feather icon-info f-16 text-primary"></i>
                                                     </a>
                                                 </td>
@@ -223,7 +223,7 @@
                         <div class="row mb-3">
                             <label class="col-sm-3 col-form-label">Locker ID</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control-plaintext" readonly value="1234">
+                                <input type="text" class="form-control-plaintext" readonly value="FA5299CB">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -235,7 +235,7 @@
                         <div class="row mb-3">
                             <label class="col-sm-3 col-form-label">Weight</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control-plaintext" readonly value="1234">
+                                <input type="text" class="form-control-plaintext" readonly value="0 g">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -243,16 +243,73 @@
                             <div class="col-sm-9 my-auto">
                                 <div class="form-check form-switch">
                                     <input type="checkbox" class="form-check-input">
+                                    <label class="badge bg-light-success">
+                                        Locked
+                                    </label>
                                 </div>
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label class="col-sm-3 col-form-label">Sterelize</label>
+                            <label class="col-sm-3 col-form-label">Sterilize</label>
                             <div class="col-sm-9">
-                                <button class="btn btn-success btn-sm" type="button">
-                                    <i class="feather icon-download-cloud"></i>
-                                    Sterelize Now
-                                </button>
+                                <label class="badge bg-light-danger">
+                                    Not sterilize yet
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="LockerModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="LockerModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LockerModalTitle">Locker Detail</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Locker ID</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="FA5300CB">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Locker Status</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="Filled">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Weight</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="500 g">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Lock Status</label>
+                            <div class="col-sm-9 my-auto">
+                                <div class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input">
+                                    <label class="badge bg-light-success">
+                                        Unlocked
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Sterilize</label>
+                            <div class="col-sm-9">
+                                <label class="badge bg-light-danger">
+                                    Not sterilize yet
+                                </label>
                             </div>
                         </div>
                     </form>

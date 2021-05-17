@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Dadakanz">
 
-    
+
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16" />
@@ -160,13 +160,15 @@
                                                     <div><label class="badge bg-light-danger">Empty</label></div>
                                                 </td>
                                                 <td>0 g</td>
-                                                <td><span class="material-icons-two-tone">
-                                                    toggle_off</span>
+                                                <td>
                                                     <span class="material-icons-two-tone">
-                                                    lock</span>
+                                                        lock
+                                                    </span>
                                                 </td>
                                                 <td>
-                                                    No activity
+                                                    <a href="#!" data-toggle="modal" data-target="#LockerModal">
+                                                        <i class="icon feather icon-info f-16 text-primary"></i>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -175,13 +177,15 @@
                                                     <div><label class="badge bg-light-success">Filled</label></div>
                                                 </td>
                                                 <td>500 g</td>
-                                                <td><span class="material-icons-two-tone">
-                                                    toggle_on</span>
+                                                <td>
                                                     <span class="material-icons-two-tone">
-                                                    lock_open</span>
+                                                        lock_open
+                                                    </span>
                                                 </td>
                                                 <td>
-                                                    Sterilizing...
+                                                    <a href="#!" data-toggle="modal" data-target="#LockerModal">
+                                                        <i class="icon feather icon-info f-16 text-primary"></i>
+                                                    </a>
                                                 </td>
                                             </tr>
                                             <!-- <tr>
@@ -204,6 +208,59 @@
                 <!-- customer-section end -->
             </div>
             <!-- [ Main Content ] end -->
+        </div>
+    </div>
+    <div id="LockerModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="LockerModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LockerModalTitle">Locker Detail</h5>
+                    <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Locker ID</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="1234">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Locker Status</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="Empty">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Weight</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control-plaintext" readonly value="1234">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Lock Status</label>
+                            <div class="col-sm-9 my-auto">
+                                <div class="form-check form-switch">
+                                    <input type="checkbox" class="form-check-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-sm-3 col-form-label">Sterelize</label>
+                            <div class="col-sm-9">
+                                <button class="btn btn-success btn-sm" type="button">
+                                    <i class="feather icon-download-cloud"></i>
+                                    Sterelize Now
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn  btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- [ Main Content ] end -->
